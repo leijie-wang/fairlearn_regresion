@@ -12,7 +12,7 @@ from time import time
 from ._constants import _PRECISION, _INDENTATION, _LINE
 
 from fairlearn.reductions._moments import ClassificationMoment
-from fairlearn.regression.regression_moment import CDF_DemographicParity
+from fairlearn.reductions._moments import CDF_DemographicParity
 
 logger = logging.getLogger(__name__)
 

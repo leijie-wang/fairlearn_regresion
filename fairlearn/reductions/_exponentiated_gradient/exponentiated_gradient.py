@@ -259,4 +259,4 @@ class ExponentiatedGradient(BaseEstimator, MetaEstimatorMixin):
             positive_probs = pred[self.weights_.index].dot(self.weights_).to_frame()
             return np.concatenate((1-positive_probs, positive_probs), axis=1)
         else:
-            return pred
+            return pred,self.weights_
